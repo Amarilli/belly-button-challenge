@@ -14,7 +14,7 @@ function init() {
         let dropdownMenu = d3.select('#selDataset');
 
         //Using D3 getting access to sample data
-        d3.json(url).then((data) => {
+        d3.json(URL).then((data) => {
 
         // Declaring a variable to store names
         let names = data.names;
@@ -64,7 +64,7 @@ function BarChart(sample){
 
         //Bar Chart's trace
         let bar_chart_trace = {
-            x: sample.values.reverse(),
+            x: sample_values.reverse(),
             y: otu_ids.map(item => `OTU ${item}`).reverse(),
             text: otu_labels.reverse(),
             type: 'bar',
