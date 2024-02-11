@@ -151,6 +151,6 @@ function optionChange (value){
     BubbleChart(value);
     Metadata(value);
     GaugeChart(name_one);
-};
+}
 
 init();
