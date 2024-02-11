@@ -50,9 +50,11 @@ I adapted the Gauge Chart from `https://plot.ly/javascript/gauge-charts/Links` t
 
 I modified the example gauge code to account for values ranging from 0 through 9.
 
-I updated the chart whenever a new sample is selected.
+I updated the chart in case a new sample is selected.
 
+## References 
 
+Hulcr, J. et al. (2012) A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable. Retrieved from: http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/Links to an external site.
 
 
 
