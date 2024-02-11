@@ -35,8 +35,8 @@ function init() {
         // Build the plots: a demographic panel, a bar chart, a bubble chart, and a gauge chart
         BarChart(name_one);
         BubbleChart(name_one);
-        //GaugeChart(name_one);
         Metadata(name_one);
+        GaugeChart(name_one);
 
     }); // Ending D3 access
 };
@@ -144,12 +144,13 @@ function Metadata(sample){
     });
 }
 
-// Define the function when the dropdown detets a change
+// Define the function when the dropdown detects a change
 function optionChange (value){
     console.log(value);
     BarChart(value);
     BubbleChart(value);
     Metadata(value);
+    GaugeChart(name_one);
 };
 
 init();
