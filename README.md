@@ -1,6 +1,16 @@
 # belly-button-challenge
 
-I use the D3 library to read in `samples.json` from the URL `https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json`.
+## Background
+
+In this assignment, I built an interactive dashboard to explore the *[Belly Button Biodiversity dataset](https://robdunnlab.com/projects/belly-button-biodiversity/)*, which catalogs the microbes that colonize human navels.
+
+The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
+
+![belly button](https://robdunnlab.com/wp-content/uploads/940.jpg)
+
+## Horizontal Bar Chart
+
+I used the D3 library to read in `samples.json` from the URL `https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json`.
 
 I created a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
 
@@ -9,6 +19,8 @@ I used `sample_values` as the values for the bar chart.
 I used `otu_ids` as the labels for the bar chart.
 
 I used `otu_labels` as the hovertext for the chart.
+
+## Bubble Chart
 
 I created a bubble chart that displays each sample.
 
