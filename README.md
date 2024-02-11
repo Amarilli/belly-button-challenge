@@ -20,6 +20,8 @@ I used `otu_ids` as the labels for the bar chart.
 
 I used `otu_labels` as the hovertext for the chart.
 
+![bar chart](https://github.com/Amarilli/belly-button-challenge/blob/main/Images/barchart.png)
+
 ## Bubble Chart
 
 I created a bubble chart that displays each sample.
@@ -39,9 +41,12 @@ I displayed the sample metadata, i.e., an individual's demographic information.
 I displayed each key-value pair from the metadata JSON object somewhere on the page.
 
 I updated all the plots when a new sample is selected. Additionally, I created a layout for the dashboard. 
-IMAGE
+
+![bubble](https://github.com/Amarilli/belly-button-challenge/blob/main/Images/bubblechart.png)
+
 
 I deployed my app to a free static page hosting service, such as GitHub Pages. I submitted the links to my deployment and my GitHub repo. I ensured that your repository has regular commits and a thorough `README.md` file
+
 
 ## Advanced Challenge Assignment (Optional with no extra points earning)
 The following task is advanced and therefore optional.
