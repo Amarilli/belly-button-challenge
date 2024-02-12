@@ -57,6 +57,8 @@ I modified the example gauge code to account for values ranging from 0 through 9
 
 I updated the chart in case a new sample is selected.
 
+![gauge](https://github.com/Amarilli/belly-button-challenge/blob/main/Images/gauge_chart.png)
+
 ## References 
 
 Hulcr, J. et al. (2012) A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable. Retrieved from: http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/Links to an external site.
