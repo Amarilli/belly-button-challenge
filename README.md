@@ -65,5 +65,5 @@ I updated the chart in case a new sample is selected.
 
 Hulcr, J. et al. (2012) A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable. Retrieved from: http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/Links to an external site.
 
-Background image: <a href="http://www.freepik.com">Designed by Macrovector / Freepik</a>
+Background image: <a href="http://www.freepik.com">Designed by Freepik</a>
 

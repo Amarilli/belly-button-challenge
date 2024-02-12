@@ -1,11 +1,21 @@
-#dashboard-image {
-    background-image: url('https://www.freepik.com/free-vector/cells-pattern-design_1045087.htm#query=bacteria%20background&position=30&from_view=keyword&track=ais&uuid=ee9aeb2c-c1e0-4232-8a96-81d50ea0f332');
-    -webkit-background-size: cover; 
-    -moz-background-size: cover;
-    -o-background-size: cover; 
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
+body {
+margin: 0;
+font-family: system-ui;
+}
+.hero { 
+    background-color: #c5d5d7; 
+    background-image: url(background.jpg);
+    color: rgb(2, 2, 2);
+
+    padding-top: 200px; 
+    padding-bottom: 200px;
 }
 
 
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
