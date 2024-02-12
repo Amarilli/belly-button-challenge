@@ -38,6 +38,8 @@ I used `otu_labels` for the text values.
 
 I displayed the sample metadata, i.e., an individual's demographic information.
 
+![demographic](https://github.com/Amarilli/belly-button-challenge/blob/main/Images/demographic.png)
+
 I displayed each key-value pair from the metadata JSON object somewhere on the page.
 
 I updated all the plots when a new sample is selected. Additionally, I created a layout for the dashboard. 
