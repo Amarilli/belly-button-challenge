@@ -1,40 +1,3 @@
-// Fetch the JSON data and console log it
-d3.json(URL).then(function(data) {
-    console.log(data);
-}); 
-
-// Initializing the dashboard 
-function init() {
-    // D3 and dropdown menu
-    let dropdownMenu = d3.select('#selDataset');
-    // Using D3 getting access to sample data
-    d3.json(URL).then((data) => {
-
-        // Declaring a variable to store names
-        let names = data.names;
-
-        // Add samples to dropdown menu
-        names.forEach((id) => {
-            console.log(id);
-             // Append each name as an option to the drop down menu
-            dropdownMenu.append('option')
-            .text(id)
-            .property('value', id);
-
-        });
-
-        // Assign the first name to name variable
-        let name_one = names[0];
-
-        // Log name_one
-        console.log(name_one);
-
-        // Build the gauge chart
-        GaugeChart(name_one);
-    });
-};
-
-// Create a function that builds the gauge chart
 function GaugeChart(sample) {
     // Using D3 to access the sample data and populate the gauge chart
     d3.json(URL).then((data) => {
@@ -74,24 +37,41 @@ function GaugeChart(sample) {
                     { range: [8, 9], color: "rgba(50, 143, 10, 0.5)"},
                     { range: [9, 10], color: "rgba(14, 127, 0, .5)"} // Darker
                 ],
-                labels: ['0-1', '1-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-9', ''],
-                hoverinfo: 'text',
+                // Labels
+                labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                hoverinfo: 'none',
+                // Arrow hand
+                threshold: {
+                    line: { color: "red", width: 4 },
+                    thickness: 0.8, // Adjust the thickness to make the arrow longer
+                    value: scrubsWeeks
+                }
             }
         };
 
         // Set the layout
         let layout = {
             width: 550,
-            height: 550,
-            margin: {t: 0, b:0}
+            height: 450,
+            margin: {t: 0, b:0},
+            paper_bgcolor: "lavender",
+            xaxis: {
+                range: [0, 10],
+                zeroline: false,
+                showticklabels: false,
+                showgrid: false,
+                fixedrange: true
+            },
+            yaxis: {
+                range: [0, 10],
+                zeroline: false,
+                showticklabels: false,
+                showgrid: false,
+                fixedrange: true
+            }
         };
 
         // Call Plotly
         Plotly.newPlot('gauge', [gauge_chart_trace], layout);
     });
 };
-
-// Init func
-init();
-
-

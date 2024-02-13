@@ -111,6 +111,7 @@ function BubbleChart(sample){
         let layout = {
             title: 'Bacteria Count for each Sample ID',
             hovermode: 'closest',
+            paper_bgcolor: "lavender",
             xaxis:{title: 'OTU ID'},
             yaxis:{title: 'Number of Bacteria'},
         };
@@ -145,11 +146,11 @@ function Metadata(sample){
 }
 
 // Define the function when the dropdown detects a change
-function optionChange (value){
-    console.log(value);
-    BarChart(value);
-    BubbleChart(value);
-    Metadata(value);
+function optionChange (name_one){
+    console.log(name_one);
+    BarChart(name_one);
+    BubbleChart(name_one);
+    Metadata(name_one);
     GaugeChart(name_one);
 }
 
