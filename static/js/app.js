@@ -73,8 +73,11 @@ function BarChart(sample){
             
 
         };
-
-        let layout = {title: 'Top 10 OTUs found',
+        
+        let layout = {title: { 
+            text: '<b>Top 10 OTUs found</b>',
+        font: {size: 16, color: 'black'},
+        },
         paper_bgcolor: "lavender",
     };
         Plotly.newPlot('bar', [bar_chart_trace], layout);
@@ -112,7 +115,10 @@ function BubbleChart(sample){
         };
 
         let layout = {
-            title: 'Bacteria Count for each Sample ID',
+            title: { 
+                text: '<b>Bacteria Count for each Sample IDd</b>',
+            font: {size: 16, color: 'black'}
+            },
             hovermode: 'closest',
             paper_bgcolor: "lavender",
             xaxis:{title: 'OTU ID'},
@@ -149,12 +155,13 @@ function Metadata(sample){
 }
 
 // Define the function when the dropdown detects a change
-function optionChange (name_one){
-    console.log(name_one);
-    BarChart(name_one);
-    BubbleChart(name_one);
-    Metadata(name_one);
-    GaugeChart(name_one);
+function optionChanged(results){
+    console.log(results);
+    BarChart(results);
+    BubbleChart(results);
+    Metadata(results);
+    GaugeChart(results);
 }
+
 
 init();

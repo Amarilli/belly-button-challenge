@@ -19,3 +19,26 @@ font-family: system-ui;
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+#sample-metadata {
+    width: 120% !important; /* Adjust the width  */
+    height: 200px; /* Adjust the height  */
+    overflow-y: auto; /* Add scroll bar if content overflows */
+    padding: 10px; /* Add padding for better appearance */
+    background-color: "lavender"; /* add background color */
+}
+
+#bar,
+#bubble {
+    border-radius: 10px; /* rounded corner */
+    overflow: hidden; /* Ensure content stays within the rounded corners */
+    margin-bottom: 20px; /* Add some space between the charts */
+}
+#gauge {
+    border-radius: 10px; /* Adjust the radius as needed */
+    overflow: hidden; /* Hide content that overflows */
+    margin-bottom: 20px; /* Add some space between the charts */
+    height: 400px; /* Adjust the height as needed */
+    width: 600px; /* Adjust the width as needed */
+}
+

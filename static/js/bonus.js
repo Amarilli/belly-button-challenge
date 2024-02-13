@@ -38,8 +38,8 @@ function GaugeChart(sample) {
                     { range: [9, 10], color: "rgba(14, 127, 0, .5)"} // Darker
                 ],
                 // Labels
-                labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-                hoverinfo: 'none',
+                labels: ['0-1', '1-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-9'],
+                hoverinfo: 'label',
                 // Arrow hand
                 threshold: {
                     line: { color: "fuchsia", width: 4 },
@@ -49,29 +49,38 @@ function GaugeChart(sample) {
             }
         };
 
-        // Set the layout
-        let layout = {
-            width: 550,
-            height: 450,
-            margin: {t: 0, b:0},
-            paper_bgcolor: "lavender",
-            xaxis: {
-                range: [0, 10],
-                zeroline: false,
-                showticklabels: false,
-                showgrid: false,
-                fixedrange: true
-            },
-            yaxis: {
-                range: [0, 10],
-                zeroline: false,
-                showticklabels: false,
-                showgrid: false,
-                fixedrange: true
-            }
-        };
+// Set the layout
+let layout = {
+    width: 550,
+    height: 450,
+    margin: { t: 0, b: 0 },
+    paper_bgcolor: "lavender",
+    xaxis: {
+        range: [0, 10],
+        zeroline: false,
+        showticklabels: true,
+        showgrid: false,
+        fixedrange: true,
+        tickvals: [0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5], // Midpoints of each range
+        ticktext: ['0-1', '1-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-9'], // Text displayed at each tick
+        tickfont: { color: 'black' } // Set the tick label color to black
+    },
+    yaxis: {
+        range: [0, 10],
+        zeroline: false,
+        showticklabels: true,
+        showgrid: false,
+        fixedrange: true,
+        tickvals: [0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5], // Midpoints of each range
+        ticktext: ['0-1', '1-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-9'], // Text displayed at each tick
+        tickfont: { color: 'black' } // Set the tick label color to black
+    }
+};
+
+
 
         // Call Plotly
         Plotly.newPlot('gauge', [gauge_chart_trace], layout);
     });
 };
+
