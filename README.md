@@ -47,7 +47,7 @@ I updated all the plots when a new sample is selected. Additionally, I created a
 ![bubble](https://github.com/Amarilli/belly-button-challenge/blob/main/Images/bubblechart.png)
 
 
-I deployed my app to a free static page hosting service, such as GitHub Pages. I submitted the links to my deployment and my GitHub repo. I ensured that your repository has regular commits and a thorough `README.md` file
+I deployed my app to a free static page hosting service, such as [GitHub Pages](https://amarilli.github.io/belly-button-challenge/)
 
 
 ## Advanced Challenge Assignment (Optional with no extra points earning)
