@@ -70,10 +70,13 @@ function BarChart(sample){
             text: otu_labels.reverse(),
             type: 'bar',
             orientation: 'h',
+            
 
         };
 
-        let layout = {title: 'Top 10 OTUs found'};
+        let layout = {title: 'Top 10 OTUs found',
+        paper_bgcolor: "lavender",
+    };
         Plotly.newPlot('bar', [bar_chart_trace], layout);
     });
 };

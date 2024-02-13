@@ -42,7 +42,7 @@ function GaugeChart(sample) {
                 hoverinfo: 'none',
                 // Arrow hand
                 threshold: {
-                    line: { color: "red", width: 4 },
+                    line: { color: "fuchsia", width: 4 },
                     thickness: 0.8, // Adjust the thickness to make the arrow longer
                     value: scrubsWeeks
                 }
