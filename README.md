@@ -12,11 +12,11 @@ The dataset reveals that a small handful of microbial species (also called opera
 
 I used the D3 library to read in `samples.json` from the URL `https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json`.
 
-I created a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
+I created a horizontal bar chart with a dropdown menu to display the top 10 OTUs in a determinate sample.
 
 I used `sample_values` as the values for the bar chart.
 
-I used `otu_ids` as the labels for the bar chart.
+I used `otu_ids` as the label for the bar chart.
 
 I used `otu_labels` as the hovertext for the chart.
 
@@ -40,9 +40,9 @@ I displayed the sample metadata, i.e., an individual's demographic information.
 
 ![demographic](https://github.com/Amarilli/belly-button-challenge/blob/main/Images/demographic.png)
 
-I displayed each key-value pair from the metadata JSON object somewhere on the page.
+I displayed each key-value pair from the metadata JSON object on the page.
 
-I updated all the plots when a new sample is selected. Additionally, I created a layout for the dashboard. 
+I updated all the plots in case a new sample is selected. Additionally, I created a layout for the dashboard. 
 
 ![bubble](https://github.com/Amarilli/belly-button-challenge/blob/main/Images/bubblechart.png)
 
@@ -50,14 +50,13 @@ I updated all the plots when a new sample is selected. Additionally, I created a
 I deployed my app to a free static page hosting service, such as [GitHub Pages](https://amarilli.github.io/belly-button-challenge/)
 
 
-## Advanced Challenge Assignment (Optional with no extra points earning)
-The following task is advanced and therefore optional.
+## Gauge Chart
 
-I adapted the Gauge Chart from [Plotly](https://plot.ly/javascript/gauge-charts) to plot the weekly washing frequency of the individual.
+I adapted the Gauge Chart from [Plotly](https://plot.ly/javascript/gauge-charts) to plot the weekly washing frequency of each individual.
 
 I modified the example gauge code to account for values ranging from 0 through 9.
 
-I updated the chart in case a new sample is selected.
+Also, I updated the chart in case a new sample is selected. Here is the result: 
 
 ![gauge](https://github.com/Amarilli/belly-button-challenge/blob/main/Images/gauge_chart.png)
 
