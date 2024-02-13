@@ -4,7 +4,7 @@ font-family: system-ui;
 }
 .hero { 
     background-color: #c5d5d7; 
-    background-image: url("/background.jpg");
+    background-image: url('background.jpg');
     color: rgb(2, 2, 2);
 
     padding-top: 200px; 
